@@ -6,6 +6,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 import pickle
+import matplotlib.pyplot as plt
 import seaborn as sns
 import shap
 
@@ -60,6 +61,7 @@ print('\nTrue Positives(TP) = ', cm[0,0])
 print('\nTrue Negatives(TN) = ', cm[1,1])
 print('\nFalse Positives(FP) = ', cm[0,1])
 print('\nFalse Negatives(FN) = ', cm[1,0])
+plt.figure(1)
 cm_matrix = pd.DataFrame(data=cm, columns=['Actual Blue Side', 'Actual Red Side'], 
                                  index=['Predict Blue Side', 'Predict Red Side'])
 sns.heatmap(cm_matrix, annot=True, fmt='d', cmap='YlGnBu')
@@ -82,6 +84,7 @@ specificity = TN / (TN + FP)
 print('Specificity : {0:0.4f}'.format(specificity))
 
 # use Kernel SHAP to explain test set predictions
+plt.figure(2)
 explainer = shap.KernelExplainer(svc.predict_proba, shap.sample(X_train,120), link="logit")
 shap_values = explainer.shap_values(shap.sample(X_test,30), nsamples=100)
 shap.summary_plot(shap_values, features=X_test, feature_names=cols, class_names=["Blue Win", "Red Win"])
