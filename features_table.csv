@@ -1,0 +1,24 @@
+﻿Feature,Name Used,Observations
+Total team gold,total_[side]_gold,"Percentage of total gold in game, one for blue and one for red side"
+Median gold per player,med_[side]_gold,"Median percentage of gold per each position, for each side"
+Total team kills,total_[side]_kills,Percentage of total kills in the game for each side
+Median kills per player,med_[side]_kills,Median percentage of kills per each position of each side
+First blood,[side]_first_blood,Boolean of whether the team got first blood or not
+Total team towers,total_[side]_turret,Percentage of towers taken (out of all towers taken in the game) per side
+First tower,[side]_first_turret,Boolean of whether or not the team took the first turret taken in the game
+Total team dragons,total_[side]_drakes,Percentage of all drakes taken per side
+First drake,[side]_first_drake,Boolean of whether the team got the first drake or not
+Dragon soul,[side]_got_soul,Boolean of whether the team got dragon soul or not
+Total elder drakes,total_[side]_elders,Total percentage of elders (out of all taken) per side
+Total team experience,total_[side]_xp,Total percentage of experience per side
+Median team experience,med_[side]_xp,Median percentage of experience per side
+Total team damage to champs,total_[side]_dmg,Percentage of total damage dealt to champions per side
+Median damage to champs,med_[side]_dmg,Median percentage of total damage dealt to champions per player in each side
+First herald,[side]_first_herald,Boolean of whether the team took the first rift herald or not
+Total heralds,total_[side]_heralds,Total percentage of rift heralds taken by each team
+First Inhibitor,[side]_first_inhib,Boolean of whether or not the team was the first to take an inhibitor in the enemy base
+Total Inhibitors,total_[side]_inhibs,Total percentage of inhibitors taken by each team
+First baron,[side]_first_baron,Boolean of whether or not the team to the first Baron Nashor or not
+Total vision score,total_[side]_vs,Total percentage vision score per side
+Median vision score,med_[side]_vs,Median percentage vision score per role in each side
+Total barons,total_[side]_barons,Total percentage of barons taken by each side
